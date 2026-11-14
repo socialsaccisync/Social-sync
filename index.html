@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SOCIALSYNC — Forest Pixel World</title>
 <link rel="stylesheet" href="styles.css"></head>
-<body><div id="world"><div class="forest-mist" aria-hidden="true"></div><div class="chimney-smoke" aria-hidden="true"><i></i><i></i><i></i></div>
+<body><div id="authGate" class="auth-gate" aria-live="polite"></div><div id="world"><div class="forest-mist" aria-hidden="true"></div><div class="chimney-smoke" aria-hidden="true"><i></i><i></i><i></i></div>
 <header class="top"><div class="brand"><div class="pixel-faces" aria-label="SOCIALSYNC game characters"><img data-creature="raina" alt="Raina pixel game character"><img data-creature="lysandra" alt="Lysandra pixel game character"><img data-creature="andrew" alt="Andrew pixel game character"><img data-creature="khim" alt="Khim pixel game character"></div><div class="logo">SOCIALSYNC <small>PIXEL WORLD • TEAMWORK • EVERY VOICE MATTERS</small></div></div>
 <div class="hud"><span class="pill" id="teamPill">🌼 5 learners</span><span class="pill xp-pill" id="xpPill">⭐ 0 XP · Lv 1</span><button onclick="zoom(-.1)">−</button><span id="zoomLabel">100%</span><button onclick="zoom(.1)">＋</button><button onclick="openPanel('settings')">⚙</button><button onclick="toggleMusic()" id="musicBtn">♫ Music off</button></div></header>
 <main id="mapview"><div class="welcome"><span class="eyebrow">✦ YOUR CLASSROOM ADVENTURE ✦</span><h1>Welcome to SocialSync!</h1><p>Explore the garden, step inside the team house, or visit the tutorial trail to begin your adventure.</p></div>
@@ -22,4 +22,6 @@
 </div></section>
 <p class="hint">☁️ Follow the forest paths — each little place opens with a gentle cloud-travel transition ✦</p></main></div>
 <div class="modal" id="modal"><div class="window"><button class="close" onclick="closePanel()">×</button><div id="panelContent"></div></div></div><div id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
 <script src="script.js"></script></body></html>
